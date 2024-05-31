@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" id="logo">Logo</a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses +</a>
+
+                    <ul class="drop1">
+                        <li><a href="#">Basic Computer</a></li>
+                        <li><a href="#">Web Designing</a>
+                            <ul>
+                                <li><a href="#">Frontend</a></li>
+                                <li><a href="#">Backend</a></li>
+                                <li><a href="#">GitHub</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Android Development</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="#">Notes</a>
+                    <ul class="drop1">
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Data Strucuture</a></li>
+                        <li><a href="#">Web Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" id="tgle">Tap</a>
+    </header>
+    <script>
+        var toggle=document.getElementById("tgle");
+        var nav=document.getElementsByClassName("nav-bar")[0];
+        toggle.addEventListener("click",function(){
+            nav.classList.toggle("show");
+        });
+
+    </script>
+</body>
+
+</html>
